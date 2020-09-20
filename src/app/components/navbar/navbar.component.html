@@ -1,0 +1,38 @@
+<nav class="nav-large">
+  <div class="logo">
+    <div class="main-heading">PAWS</div>
+    <div class="sub-heading">Rescue Shelter</div>
+  </div>
+  <ul class="nav-links">
+    <li>Home</li>
+    <li>About</li>
+    <li>Adopt</li>
+    <li>Donate</li>
+    <li>Volunteer</li>
+    <li>Contact</li>
+  </ul>
+</nav>
+
+<nav class="nav-small">
+  <fa-icon
+    [icon]="faBars"
+    size="2x"
+    (click)="toggleSideBar()"
+    class="nav-hamburger"
+    *ngIf="!toggled"
+  ></fa-icon>
+  <div class="drawer" *ngIf="toggled">
+    <div class="logo">
+      <h1>PAWS</h1>
+    </div>
+    <hr />
+    <ul class="drawer-nav-links">
+      <li>Home</li>
+      <li>About</li>
+      <li>Adopt</li>
+      <li>Donate</li>
+      <li>Volunteer</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+</nav>

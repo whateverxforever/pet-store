@@ -1,0 +1,96 @@
+.home-page-container {
+  width: 100%;
+  height: 100%;
+}
+
+.social-media {
+  position: fixed;
+  left: 0px;
+  top: 40%;
+  ul {
+    list-style: none;
+    float: left;
+
+    li {
+      padding: 5px 0px;
+    }
+  }
+}
+
+.landing-container {
+  padding-top: 60px;
+  height: calc(100% - 60px);
+  background-image: url("../../../assets/images/dog-blanket-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .landing-message-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 400px;
+  }
+
+  .landing-hero-message {
+    font-size: 4.8em;
+    line-height: 1.2em;
+    padding-bottom: 10px;
+  }
+
+  .hero-buttons {
+    margin: 30px 0px;
+    button {
+      font-size: 1.2em;
+      width: 170px;
+      padding: 15px;
+      margin-right: 20px;
+      background-color: black;
+      border-radius: 10px;
+      cursor: pointer;
+      border: solid 1px grey;
+      transition: 0.4s;
+      color: white;
+
+      &:hover {
+        background-color: indianred;
+        color: white;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .landing-container {
+    .landing-message-container {
+      .landing-hero-message {
+        font-size: 3em;
+      }
+    }
+    .hero-buttons {
+      button {
+        font-size: 1em;
+        width: 140px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .home-page-container {
+    .social-media {
+      display: none;
+    }
+    .landing-container {
+      margin: 0;
+      background-position: right;
+      .landing-message-container {
+        margin: 0;
+        width: 80%;
+      }
+    }
+  }
+}
